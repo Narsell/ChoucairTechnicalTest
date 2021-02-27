@@ -1,6 +1,5 @@
 package co.com.choucair.technicaltest.model;
 
-import java.util.Date;
 
 public class SignUpData {
 
@@ -9,6 +8,15 @@ public class SignUpData {
     private String strEmail;
     private String strBirthDateDay;
     private String strBirthDateMonth;
+    private String strBirthDateYear;
+
+    private String strCity;
+    private String strZipCode;
+    private String strCountry;
+
+    private String strOSType;
+    private String strOSVersion;
+    private String strOSLanguage;
 
     public String getStrBirthDateDay() {
         return strBirthDateDay;
@@ -33,16 +41,6 @@ public class SignUpData {
     public void setStrBirthDateYear(String strBirthDateYear) {
         this.strBirthDateYear = strBirthDateYear;
     }
-
-    private String strBirthDateYear;
-
-    private String strCity;
-    private String strZipCode;
-    private String strCountry;
-
-    private String strOSType;
-    private String strOSVersion;
-    private String strOSLanguage;
 
     public String getStrFirstName() {
         return strFirstName;

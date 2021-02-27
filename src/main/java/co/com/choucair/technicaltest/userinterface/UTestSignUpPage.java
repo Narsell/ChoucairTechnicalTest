@@ -1,6 +1,5 @@
 package co.com.choucair.technicaltest.userinterface;
 
-import co.com.choucair.technicaltest.model.SignUpData;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
@@ -34,9 +33,9 @@ public class UTestSignUpPage {
     public static final Target ZIP_INPUT = Target.the("Zip code input")
             .located(By.id("zip"));
     public static final Target COUNTRY_SELECTOR = Target.the("Dropdown that displays the list of countries")
-            .located(By.xpath("//span[@class='ui-select-match-text pull-left']"));
+            .located(By.name("countryId"));
     public static final Target COUNTRY_INPUT = Target.the("Dropdown that displays the list of countries")
-            .located(By.xpath("//input[@placeholder='Select a country']"));
+            .located(By.xpath("//div[@name='countryId']//input[@placeholder='Select a country']"));
     public static final Target STAGE_2_BUTTON = Target.the("Button that takes us into the third sign up step")
             .located(By.xpath("//a[@class='btn btn-blue pull-right']//span[contains(text(), 'Next: Devices')]"));
 
@@ -81,6 +80,7 @@ public class UTestSignUpPage {
             .located(By.xpath("//label//a[@href='/privacy-policy']/../span[@class='checkmark signup-consent__checkbox error']"));
     public static final Target FINISH_BUTTON = Target.the("Button that finishes the sign up process")
             .located(By.id("laddaBtn"));
+
     public static final Target CAPTCHA_FRAME = Target.the("Captcha frame that pops into the browser once the sign up form has been filled")
             .located(By.xpath("//iframe[@title='recaptcha challenge']"));
 

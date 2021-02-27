@@ -12,6 +12,6 @@ Feature: UTest
     Then he is registered as a new user at Utest
 
     Examples:
-      | strFirstName   |  strLastName   |         strEmail           |   strBirthDateDay  | strBirthDateMonth | strBirthDateYear | strCity  |  strZipCode  | strCountry   |  strOSType  |  strOSVersion  |   strOSLanguage   |   strPhoneBrand   |  strPhoneModel   |   strPhoneOS   |  strPassword  |
-      |      Carl      |    Sagan       | Carl.sagan@gmail.com       |          9         |     November      |       1934       | Bogota   |  130537      | Colombia     | Windows     |       10       |  English          |      Motorola     |  Moto G8 Plus    |   Android 10   |   P4ssw@rd1.  |
+      | strFirstName   |  strLastName   |         strEmail           |   strBirthDateDay  | strBirthDateMonth | strBirthDateYear | strCity    |  strZipCode  |   strCountry   | strOSType  |  strOSVersion  |   strOSLanguage   |   strPhoneBrand   |  strPhoneModel   |   strPhoneOS   |  strPassword  |
+      |      Carl      |    Sagan       |    carl.sagan@gmail.com    |          9         |     November      |       1934       |  Bogota    |    11212     |    Colombia    |  Windows   |       10       |      English      |      Motorola     |   Moto G8 Plus   |   Android 10   |   P4ssw@rd1.  |
 
